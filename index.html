@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Snacks</title>
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="banner">
+
+        <header>
+            <img src="Images/logo2.png" alt="healthy savory snacks"> <span id="logo_text">Quick Snacks</span>
+
+            <nav>
+                <ul id="navbar_items">
+                    <li><a href="#" style="font-weight: bold; color: #349705;">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <div id="hamburger" onclick="toggleNav()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="#" style="font-weight: bold; color: #349705;">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="banner_box">
+
+            <div class="banner_content">
+                <h1>Best place to find your food love</h1>
+                <p>At Quick Snacks, we pride ourselves on delivering delicious food quickly without compromising on
+                    quality. Whether you're here for a quick bite or a leisurely meal, our diverse menu has something
+                    for everyone.</p>
+                <button id="banner_btn1">Book a Table</button>
+                <a href="menu.html">
+                <button id="banner_btn2">Discover Our Menu</button>
+            </a>
+            </div>
+
+            <div class="banner_c2">
+                <div class="banner_booktabel">
+                    <h3>Reservation</h3>
+                    <h2>Book a Table</h2>
+                    <form action="booking_system.php" method="post" id="banner_form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                        <label for="date">Select Date</label>
+                        <input type="date" id="date" name="date" required placeholder="Select Date">
+                        <label for="time">Select Time</label>
+                        <input type="time" id="time" name="time" required placeholder="Select Date">
+                        <label for="people">Number of People</label>
+                        <input type="number" id="people" name="people" required placeholder="Number of People">
+                    </form>
+                    <button type="submit" form="banner_form" id="book_btn">Book Now</button>
+                </div>
+                <h4>Book a table by phone </h4> <span>(035) 3438370</span>
+                <p>Enjoy a delightful dining experience at Quick Restaurant. We look forward to serving you!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner complete here -->
+
+
+
+    <div class="banner_menu">
+
+        <h3>Quick Snacks</h3>
+        <h2>Explore our splendid menu</h2>
+
+        <div class="menu_container">
+            <div class="menu_item item_1">
+                <h4>Savory Snacks</h4>
+                <a href="menu.html">
+                <button>View Menu</button>
+            </a>
+            </div>
+            <div class="menu_item item_2">
+                <h4>Sweet Treats</h4>
+                <a href="menu.html">
+                    <button>View Menu</button>
+                </a>
+                </div>
+            <div class="menu_item item_3">
+                <h4>Healthy Bites</h4>
+                <a href="menu.html">
+                    <button>View Menu</button>
+                </a>
+                </div>
+            <div class="menu_item item_4">
+                <h4>Beverages</h4>
+                <a href="menu.html">
+                    <button>View Menu</button>
+                </a>
+                </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- menu complete here -->
+
+
+    <div class="popular_meals">
+        <h3>Quick Snacks</h3>
+        <h2>Discover our most popular Snacks</h2>
+        <p>At Quick Snacks, we pride ourselves on delivering mouth-watering snacks quickly without compromising on
+            quality. <br> Whether you're here for a quick nibble or a satisfying treat, our diverse snack menu has
+            something for everyone.</p>
+
+        <div class="meal_container">
+            <div class="meal_box1">
+                <img src="Images/nutsbowl.png" alt="best snacks Pakistan">
+                <h4>Healthy Bites</h4>
+                <p>Delight in our wholesome trail mix, packed with a nutritious blend of nuts, seeds, and dried fruits.
+                    Perfect for a quick and healthy snack on the go.</p>
+
+                <img src="Images/nachos.jpeg" alt="spicy snack" id="biryani">
+                <h4>Nachos</h4>
+                <p>Enjoy our loaded nachos, topped with melted cheese, jalapeños, fresh salsa, and a dollop of sour
+                    cream. A perfect blend of crunch and flavor in every bite.</p>
+
+            </div>
+
+            <div class="meal_box2">
+                <img src="Images/biryani.png" alt="flavored snacks" id="karahi">
+                <h4>Biryani</h4>
+                <p>Savor the aromatic flavors of our Biryani, a perfect blend of basmati rice, tender meat,
+                    and a medley of spices, cooked to perfection.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- popular meals complete here -->
+
+
+    <div class="best_place">
+
+        <div class="box_bp">
+            <div class="pic_1"></div>
+            <div class="pic_2"></div>
+        </div>
+
+        <div class="box_pt">
+
+            <h3>Quick Snacks</h3>
+            <h2>Why choose Quick Snacks</h2>
+            <p>At Quick Snacks, we strive to provide you with the best possible dining experience,
+                with an emphasis on quality, convenience, and fresh ingredients.</p>
+                <a href="menu.html">
+                    <button>View Menu</button>
+                </a>
+    
+
+        </div>
+
+    </div>
+
+    <!-- best place complete here -->
+
+
+    <div class="most_popular">
+
+        <h3>Quick Snacks</h3>
+        <h2>Our Most Popular Snacks</h2>
+        <p>Indulge in our best-selling snacks that have become crowd favorites. From our crispy Samosas to the sweet and
+            delightful <br> Gulab Jamun, there's something for everyone to enjoy.</p>
+
+        <div class="mostp_container">
+
+            <div class="mp_item">
+                <div class="mp_img mp_1"></div>
+                <h4>Crispy Rols</h4>
+                <p>Delight in our Crispy Rols filled with tender grilled...</p>
+            </div>
+            <div class="mp_item">
+
+                <div class="mp_img mp_2"></div>
+                <h4>Popcorn Chicken</h4>
+                <p>Indulge in tender chicken nuggets coated in a crispy, ...</p>
+
+            </div>
+            <div class="mp_item">
+
+
+                <div class="mp_img mp_3"></div>
+                <h4>Crackers</h4>
+                <p>Enjoy the perfect crunch with our flavorful crackers.</p>
+
+            </div>
+            <div class="mp_item">
+
+
+                <div class="mp_img mp_4"></div>
+                <h4>Crispy Chips</h4>
+                <p>Satisfy your cravings with our irresistible chips.</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- most popular ends here -->
+
+
+    <div class="container3">
+
+        <div class="container3_box1">
+            <h3 class="c3h">Quick Snacks</h3>
+            <h2 class="c3h2">New offers and promotions</h2>
+            <a href="menu.html">
+                <button class="c3btn">View Menu</button>
+            </a>
+        </div>
+
+        <div class="c3b1">
+
+            <div class="c3b1_1 b1_img3"></div>
+
+            <div class="container3_box2" id="nomargin">
+
+                <h3 class="c3h">Restaurant</h3>
+                <h2 class="c3h2">Our Special</h2>
+                <a href="menu.html">
+                <button class="c3btn">View Menu</button>
+            </a>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="c3b1">
+
+
+
+            <div class="container3_box3" id="nomargin1">
+
+                <h3 class="c3h">Quick Snacks</h3>
+                <h2 class="c3h2">Full Menu</h2>
+                <a href="menu.html">
+                    <button class="c3btn">View Menu</button>
+                </a>
+    
+
+            </div>
+
+            <div class="c3b1_1 b1_img"></div>
+
+
+        </div>
+
+
+        <div class="container3_box4" id="nomargin">
+
+            <h3 class="c3h">Quick Snacks</h3>
+            <h2 class="c3h2">Beverages</h2>
+            <a href="menu.html">
+                <button class="c3btn">View Menu</button>
+            </a>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- container3 ends here -->
+
+    <div class="what">
+        <img src="Images/quotes.png" alt="">
+        <h2>What Our Customers Say's About Us</h2>
+        <div class="customers_img">
+            <img src="Images/guest.jpg" alt="birthday cake">
+        </div>
+        <p>At Quick Restaurant, we strive to provide you with the best possible dining experience, <br>
+            with an emphasis on quality, convenience, and fresh ingredients.</p>
+        <h4>Abdullah</h4>
+        <h5>Guest</h5>
+    </div>
+
+    <!-- what ends here -->
+
+    <div class="our_chefs">
+        <video autoplay muted loop class="background-video">
+            <source src="Images/chefsvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h2>Our Chef's Secrets</h2>
+<p>At Quick Snacks, our chefs blend traditional techniques with modern twists to create mouth-watering snacks.  Each bite is <br> crafted with love, using the freshest ingredients and secret recipes passed down through generations.</p>           
+<a href="about us.html"> 
+<button>About Us</button>
+</a>
+        </div>
+    </div>
+
+    <!-- our chefs ends here -->
+
+    <div class="footer">
+        <center>
+        <img src="Images/logo2.png" alt="best desserts"> <span id="logo_text">Quick Snacks</span>
+    </center>
+
+    <div class="footer_container">
+      
+        <div class="hours">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 11 AM - 10 PM</p>
+            <p>Saturday: 11 AM - 11 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+        <div class="booktable">
+            <h3>Book a Table</h3>
+            <p>Planning to visit us? Reserve your table in advance to ensure <br> a delightful dining experience.
+                Whether it's a cozy meal for two or a gathering <br> with friends, we're here to make your visit memorable.
+                Book your table now and <br> enjoy our delicious snacks without the wait!</p>
+                        </div>
+            <div class="address">
+                <h3>Contact Us</h3>
+                <p>5E Nazimabad, Karachi, Pakistan</p>
+                <p>Phone: (033) 353-438370</p>
+                <p>Email: abdullah2401a@aptechsite.net</p>
+        </div>
+            <!-- copyright details -->
+
+
+    </div>
+    <p id="footerp">�� 2024 Quick Snacks. All rights reserved.</p>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

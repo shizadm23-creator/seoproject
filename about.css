@@ -1,0 +1,1054 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.banner {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45)), url('Images/menu.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 72px 38px 52px;
+    color: #fff;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    font-family: "Fraunces", serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 50px;
+}
+
+#logo_text {
+    font-size: 24px;
+    margin-left: 6px;
+    font-family: "Fraunces", serif;
+
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Fraunces", serif;
+}
+
+/* Hide the hamburger by default */
+#hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 8px 8px 32px;
+}
+
+.sidebar ul li a {
+    color: white;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #349705;
+}
+
+.show-sidebar {
+    width: 250px;
+}
+
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #0a1e01; /* Entire background color change */
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    padding: 30px 72px; /* Maintain padding */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        padding: 38px 52px 38px 52px;
+    }
+
+
+    nav ul {
+        display: none; /* Hide the menu items on smaller screens */
+    }
+
+    #hamburger {
+        display: flex; /* Show the hamburger icon on smaller screens */
+    }
+
+    .fixed-nav {
+        padding: 20px 40px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        padding: 20px;
+    }
+    .banner_content {
+        margin-top: 80px;
+    }
+    
+    
+    #logo {
+        height: 40px;
+    }
+    
+    #logo_text {
+        font-size: 20px;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+    
+    .banner_content h1 {
+        font-size: 28px;
+    }
+    
+    .banner_content p {
+        font-size: 12px;
+    }
+    
+    .banner_box {
+        margin-top: 20px;
+    }
+    
+    #banner_btn1, #banner_btn2 {
+        width: 140px;
+        height: 32px;
+        margin-bottom: 16px;
+    }
+    
+    .banner_booktabel {
+        padding: 10px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .banner_booktabel h3 {
+        font-size: 16px;
+    }
+    
+    .banner_booktabel h2 {
+        font-size: 20px;
+    }
+    
+    #banner_form label {
+        font-size: 12px;
+    }
+    
+    #banner_form input {
+        height: 24px;
+    }
+    
+    #book_btn {
+        height: 28px;
+    }
+    
+    .banner_c2 h4 {
+        font-size: 18px;
+    }
+    
+    .banner_c2 span {
+        font-size: 18px;
+        margin-left: 10px;
+
+    }
+    
+    .banner_c2 p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* banner complete here */
+
+.best_place {
+    padding: 60px 72px 60px 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pic_1 {
+    width: 420px;
+    height: 480px;
+    background-color: red;
+    background-image: url(Images/pizza.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+    /* box shadow */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pic_2 {
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    margin-left: 160px;
+    margin-top: -420px;
+    margin-right: 100px;
+    background-image: url(Images/snacks.jpeg);
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    /* box shadow */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pic_1:hover {
+    z-index: 9999;
+    transform: scale(1.05);
+}
+
+.pic_2:hover {
+    z-index: 9999;
+    transform: scale(1.05);
+}
+
+.box_pt h3 {
+    color: #349705;
+    margin-bottom: 6px;
+    font-family: "Fraunces", serif;
+    font-size: 18px;
+}
+
+.box_pt h2 {
+    color: black;
+    font-family: "Fraunces", serif;
+    font-size: 36px;
+}
+
+.box_pt p {
+    color: #5E5E5E;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .best_place {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .box_bp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+ .pic_1, .pic_2 {
+        width: 240px;
+        height: 240px;
+        margin: 0;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        
+    }
+
+    .pic_2 {
+        margin-top: 20px;
+        display: none;
+    }
+
+    .box_pt {
+        margin-top: 40px;
+    }
+
+    .box_pt h2 {
+        font-size: 28px;
+    }
+
+    .box_pt p {
+        font-size: 16px;
+    }
+}
+
+
+/* best place ends here */
+
+.best_chefs {
+    margin-top: 60px;
+}
+
+.best_chefs h3 {
+    text-align: center;
+    color: #349705;
+    margin-bottom: 6px;
+    font-family: "Fraunces", serif;
+    font-size: 18px;
+}
+
+.best_chefs h2 {
+    text-align: center;
+    color: black;
+    font-family: "Fraunces", serif;
+    font-size: 38px;
+}
+
+.bc_containers {
+    display: flex;
+    justify-content: center;
+    margin: 40px 72px 0px 72px;
+    align-items: center;
+}
+
+.box1 {
+    margin-right: 100px;
+    width: 600px;
+}
+
+.box1 h2 {
+    text-align: right;
+    color: black;
+    font-family: "Fraunces", serif;
+    font-size: 36px;
+}
+
+.box1 p {
+    color: #5E5E5E;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.box1 h5 {
+    color: #5E5E5E;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.box2 {
+    width: 410px;
+    height: 460px;
+    background-image: url(https://media.istockphoto.com/id/1419075831/photo/focused-on-making-delicious-salad-chef-is-on-the-kitchen-preparing-food.jpg?s=612x612&w=0&k=20&c=pSi-usPOsdJ2FpbenCfaga-bJuu9H_i_vn4Pvc48zNU=);
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    /* box shadow */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .bc_containers {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .box1 {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box1 h2, .box1 p, .box1 h5 {
+        text-align: center;
+    }
+
+    .box2 {
+        width: 310px;
+        height: 360px;
+        }
+}
+
+
+/* best chef ends here */
+
+
+.about_chefs {
+    margin-left: 72px;
+    margin-right: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.chefpic {
+    width: 250px;
+    height: 250px;
+    border-radius: 6%;
+    background-image: url(https://media.istockphoto.com/id/1175789225/photo/male-chef-garnishing-food.jpg?s=612x612&w=0&k=20&c=2nQZgOPrjaWsyVxGWlQBDI5ga_GCYVJy_ddMxKsYPwY=);
+
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cpic2 {
+    background-image: url(https://media.istockphoto.com/id/1175789225/photo/male-chef-garnishing-food.jpg?s=612x612&w=0&k=20&c=2nQZgOPrjaWsyVxGWlQBDI5ga_GCYVJy_ddMxKsYPwY=);
+}
+
+.cpic3 {
+    background-image: url(https://media.istockphoto.com/id/480379746/photo/cook-decorating-a-plate-at-a-restaurant.jpg?s=612x612&w=0&k=20&c=ZfRzr7xqK9a89DzUZ1h-oEHUEzi6FF0hiDpljIdtgt0=);
+}
+
+.chef1 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.chef1 h3 {
+    color: black;
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.chef1 h4 {
+    color: #5E5E5E;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.chef_icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 12px;
+}
+
+.chef_icons img {
+    width: 28px;
+    height: 28px;
+}
+
+.chef_icons:hover {
+    cursor: pointer;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .about_chefs {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .chef1 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .chefpic {
+        width: 270px;
+        height: 270px;
+        }
+
+    .chef_icons {
+        column-gap: 8px;
+    }
+}
+
+
+    /* our chefs end here */
+
+
+    .our_chefs {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 72px 0px 72px;
+    }
+    
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .our_chefs::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45));
+        z-index: 0;
+    }
+    
+    .content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: white;
+    }
+    
+    .content h2 {
+        color: white;
+        font-family: "Fraunces", serif;
+        font-size: 40px;
+    }
+    
+    .content p {
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .content button {
+        background-color: #349705;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: "Inter", sans-serif;
+        margin-top: 22px;
+    }
+    
+    /* Responsive Styles for Small Screens */
+    @media (max-width: 768px) {
+        .our_chefs {
+            height: 300px; /* Reduce the height for smaller screens */
+            margin-top: 40px;
+            padding: 20px;
+        }
+    
+        .content h2 {
+            font-size: 28px; /* Reduce font size for smaller screens */
+        }
+    
+        .content p {
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 20px;
+        }
+    
+        .content button {
+            width: 120px; /* Adjust button size */
+            height: 36px;
+            font-size: 14px;
+            margin-top: 15px;
+            padding: 4px;
+        }
+    }
+    
+
+    /* our chefs end here */
+
+    .best_place2 {
+        padding: 60px 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .pic_1_2 {
+        width: 380px;
+        height: 380px;
+        background-color: red;
+        background-image: url(Images/pizza.jpeg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        margin-right: 100px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .box_pt2 h3 {
+        color: #349705;
+        margin-bottom: 6px;
+        font-family: "Fraunces", serif;
+        font-size: 18px;
+    }
+    
+    .box_pt2 h2 {
+        color: black;
+        font-family: "Fraunces", serif;
+        font-size: 38px;
+    }
+    
+    .box_pt2 p {
+        color: #5E5E5E;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    
+    .box_pt2 button {
+        background-color: #349705;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: "Inter", sans-serif;
+    }
+    
+    /* Responsive Styles for Small Screens */
+    @media (max-width: 768px) {
+        .best_place2 {
+            flex-direction: column;
+            padding: 40px 20px;
+            text-align: center;
+        }
+    
+        .pic_1_2 {
+            width: 280px;
+            height: 280px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    
+        .box_pt2 h2 {
+            font-size: 28px;
+            text-align: center;
+        }
+    
+        .box_pt2 p {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+    
+        .box_pt2 button {
+            padding: 10px 24px;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    
+    /* best place box 2 ends here */
+
+    .salad{
+        margin-right: 72px;
+        margin-left: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .saladpic{
+        width: 526px;
+        height: 735px;
+        background-image: url(Images/salad.png);
+        background-size: cover;
+        background-position: center;
+        margin-right: 100px;
+    }
+    .ourno_box1{
+        margin-bottom: 40px;
+    }
+    .ourno_box1 h2{
+        font-size: 40px;
+        color: #349705;
+        font-family:"Inter", serif;
+        margin-bottom: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .ourno_box1 h4{
+        font-size: 22px;
+        color: black;
+        font-family:"Fraunces", serif;
+        text-align: center;
+    }
+    
+    .ourno_box1 p{
+        font-size: 16px;
+        color: #5E5E5E;
+        font-family:"Inter", sans-serif;
+        margin-top: 12px;
+        text-align: center;
+    }
+    
+    .our_container1{
+        width: 300px;
+    }
+    
+    .our_numbers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+
+
+
+    @media screen and (max-width: 768px) {
+        .salad {
+            display: none;
+        }
+    }
+    
+    
+    .best_place3{
+        padding: 60px 72px 60px 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .pic_1_3{
+        width: 380px;
+        height: 380px;
+        background-color: red;
+        background-image: url(Images/pizza.jpeg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        /* box shadow */
+        margin-left: 100px;
+        box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    }
+    
+    
+    
+    .box_pt3 h3{
+        color: #349705;
+        margin-bottom: 6px;
+        font-family:"Fraunces", serif;
+        font-size: 18px;
+        text-align: right;
+    
+    }
+    
+    .box_pt3 h2{
+        color: black;
+        font-family:"Fraunces", serif;
+        font-size: 38px;
+        text-align: right;
+    }
+    
+    .box_pt3 p{
+        color: #5E5E5E;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 22px;
+        margin-bottom: 30px;
+        text-align: right;
+    }
+    
+
+
+    @media screen and (max-width: 768px) {
+        .best_place3 {
+            flex-direction: column;
+            padding: 40px 20px;
+            text-align: center;
+        }
+    
+        .pic_1_3 {
+            margin-left: 0;
+            margin-bottom: 30px;
+            width: 280px;
+            height: 280px;
+    
+        }
+    
+        .box_pt3 h3, .box_pt3 h2, .box_pt3 p {
+            text-align: center;
+        }
+    }
+    
+
+    /* preadise on your plate */
+
+
+    .banner_menu{
+        margin-top: 60px;
+        padding: 0px 62px 0px 62px;
+    }
+    
+    .banner_menu h3{
+        color: #349705;
+        text-align: center;
+        margin-bottom: 4px;
+        font-family:"Fraunces", serif;
+        font-size: 18px;
+    }
+    
+    .banner_menu h2{
+        color: black;
+        text-align: center;
+        font-family:"Fraunces", serif;
+        font-size: 44px;
+    
+    }
+    
+    .menu_container{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .menu_item {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 330px;
+        padding: 20px;
+        height: 350px;
+        margin-right: 24px;
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45)), url('Images/savory\ snacks.jpeg');
+        background-size: cover;
+        background-position: center;    
+        padding-bottom: 40px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 60px;
+        border-radius: 10px;
+    }
+    
+    .menu_item:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+    
+    .menu_item h4{
+        font-size: 22px;
+        color: white;
+        font-family:"Fraunces", serif;
+        margin-bottom: 10px;
+    
+    }
+    
+    .menu_item p{
+        color: #349705;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+    }
+    
+    .item_2{
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45)), url('Images/candy.jpeg');
+            background-size: cover;
+        background-position: center;    
+    
+    }
+    
+    .item_3{
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45)), url('Images/healthy-bites.jpeg');
+            background-size: cover;
+        background-position: center;    
+    
+    }
+    
+    .item_4{
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45)), url('Images/bevrages.jpeg');
+            background-size: cover;
+        background-position: center;    
+    
+    }
+
+    @media screen and (max-width: 768px) {
+        .banner_menu {
+            padding: 0 20px;
+        }
+    
+        .banner_menu h2 {
+            font-size: 32px;
+        }
+    
+        .menu_container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .menu_item {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+            height: 300px;
+        }
+    }
+
+    
+    /* menu items end here */
+
+
+
+    .footer {
+        background-color: black;
+        width: 100%;
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        padding: 40px 72px;
+        text-align: center;
+    }
+    
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        row-gap: 24px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center; /* Changed to left align for larger screens */
+    }
+    
+    .footer_container h3 {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: "Fraunces", serif;
+    }
+    
+    .footer_container p {
+        color: white;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        margin-top: 4px;
+    }
+    
+    #footerp {
+        color: #5E5E5E;
+        margin-top: 20px;
+    }
+    
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .footer_container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center; /* Center align for smaller screens */
+        }
+    
+        .footer_container > div {
+            margin-bottom: 20px; /* Add space between sections on small screens */
+        }
+    
+        .footer_container h3 {
+            font-size: 18px;
+        }
+    
+        .footer_container p {
+            font-size: 14px;
+        }
+    
+        .footer {
+            padding: 40px 20px; /* Reduce padding on smaller screens */
+        }
+    }
+    
